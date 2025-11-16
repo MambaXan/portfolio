@@ -54,6 +54,3 @@ I'm currently available for freelance projects and full-time opportunities. Let'
 
 *"The web is what you make of it" - let's make something beautiful together.*
 =======
-# Portfolio
-My personal portfolio
-
