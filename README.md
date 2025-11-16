@@ -29,17 +29,17 @@ From writing my first "Hello World" to building complex web applications, my jou
 
 ## 🌟 Featured Work
 
-### [Admission Chance Calculator](../portfolio/src/Images/admissionCalculator.png)
-A React-based platform that helps students assess their admission chances with real-time probability calculations.
+### Admission Chance Calculator
+![Admission Chance Calculator](./src/Images/admissionCalculator.png)
 
-### [ToDo App](../portfolio/src/Images/todoApp.png)
-An intuitive todo application featuring drag-and-drop functionality and local storage persistence.
+### ToDo App
+![ToDo App](./src/Images/todoApp.png)
 
-### [Password Manager](../portfolio/src/Images/PasswordManager.png)
-A secure and responsive password management solution built with React and modern encryption practices.
+### Password Manager
+![Password Manager](./src/Images/PasswordManager.png)
 
-### [Joke App](../portfolio/src/Images/jokeApp.png)
-A simple joke app built with React
+### Joke App
+![Joke App](./src/Images/jokeApp.png)
 
 ## 📬 Let's Build Something Amazing
 
@@ -53,3 +53,7 @@ I'm currently available for freelance projects and full-time opportunities. Let'
 ---
 
 *"The web is what you make of it" - let's make something beautiful together.*
+=======
+# Portfolio
+My personal portfolio
+>>>>>>> f227ad069d8a0593a4954ff2f2934e24132f9f29
