@@ -29,16 +29,20 @@ From writing my first "Hello World" to building complex web applications, my jou
 
 ## 🌟 Featured Work
 
-### [Admission Chance Calculator](../portfolio/src/Images/admissionCalculator.png)
+### Admission Chance Calculator
+![Admission Chance Calculator](../portfolio/src/Images/admissionCalculator.png)
 A React-based platform that helps students assess their admission chances with real-time probability calculations.
 
-### [ToDo App](../portfolio/src/Images/todoApp.png)
+### ToDO App
+![ToDo App](../portfolio/src/Images/todoApp.png)
 An intuitive todo application featuring drag-and-drop functionality and local storage persistence.
 
-### [Password Manager](../portfolio/src/Images/PasswordManager.png)
+### Password Manager
+![Password Manager](../portfolio/src/Images/PasswordManager.png)
 A secure and responsive password management solution built with React and modern encryption practices.
 
-### [Joke App](../portfolio/src/Images/jokeApp.png)
+### Joke App
+![Joke App](../portfolio/src/Images/jokeApp.png)
 A simple joke app built with React
 
 ## 📬 Let's Build Something Amazing
@@ -46,7 +50,7 @@ A simple joke app built with React
 I'm currently available for freelance projects and full-time opportunities. Let's discuss how we can work together to bring your ideas to life!
 
 **Get in touch:**
-- 📧 Email: [your.email@domain.com](mambalxd@gmail.com)
+- 📧 Email: [Connect with me through email](mambalxd@gmail.com)
 - 💼 LinkedIn: [Connect with me](https://www.linkedin.com/in/marlen-istambaev-944367350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 - 🐙 GitHub: [Check my code](https://github.com/MambaXan)
 
