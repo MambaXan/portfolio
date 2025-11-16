@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# 👋 Hello, I'm Marlen
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Frontend Developer & Creative Problem Solver
 
-## Available Scripts
+Welcome to my digital garden - a space where I showcase my passion for creating beautiful, functional web experiences.
 
-In the project directory, you can run:
+## 🎭 My Story
 
-### `npm start`
+From writing my first "Hello World" to building complex web applications, my journey in development has been fueled by curiosity and a love for creating things that live on the internet.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💡 What I Believe In
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Clean Code** is maintainable code
+- **User Experience** should be intuitive and delightful  
+- **Continuous Learning** is essential in tech
+- **Open Source** makes us better developers
 
-### `npm test`
+## 🛠 My Toolbox
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend Mastery
+- React, TypeScript, JavaScript (ES6+)
+- HTML5, CSS3, SCSS, Styled Components
+- Responsive Design, CSS Grid, Flexbox
 
-### `npm run build`
+### Development Tools
+- Git, GitHub, Vite, Webpack
+- VS Code, Chrome DevTools
+- Figma, Adobe Creative Suite
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🌟 Featured Work
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### [Admission Chance Calculator](../portfolio/src/Images/admissionCalculator.png)
+A React-based platform that helps students assess their admission chances with real-time probability calculations.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### [ToDo App](../portfolio/src/Images/todoApp.png)
+An intuitive todo application featuring drag-and-drop functionality and local storage persistence.
 
-### `npm run eject`
+### [Password Manager](../portfolio/src/Images/PasswordManager.png)
+A secure and responsive password management solution built with React and modern encryption practices.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### [Joke App](../portfolio/src/Images/jokeApp.png)
+A simple joke app built with React
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📬 Let's Build Something Amazing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+I'm currently available for freelance projects and full-time opportunities. Let's discuss how we can work together to bring your ideas to life!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Get in touch:**
+- 📧 Email: [your.email@domain.com](mambalxd@gmail.com)
+- 💼 LinkedIn: [Connect with me](https://www.linkedin.com/in/marlen-istambaev-944367350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
+- 🐙 GitHub: [Check my code](https://github.com/MambaXan)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*"The web is what you make of it" - let's make something beautiful together.*
