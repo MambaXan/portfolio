@@ -6,20 +6,16 @@ import jokeApp from "./Images/jokeApp.png";
 import passwordManager from "./Images/PasswordManager.png";
 import admissionCalculator from "./Images/admissionCalculator.png";
 import todoApp from "./Images/todoApp.png";
+import studentDeadlineManager from "./Images/studentDeadlineManager.png";
 
 const PRIMARY_COLOR = "#00C6FF";
 const TEXT_COLOR = "#F5F5F5";
 const BACKGROUND_COLOR = "#0D1117";
-const SECONDARY_TEXT_COLOR = "#B0B0B0";
 
-// Navbar Component
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -40,8 +36,6 @@ const Navbar = () => {
               key={item}
               onClick={() => scrollToSection(item)}
               className="navbar__link"
-              onMouseEnter={(e) => (e.target.style.color = PRIMARY_COLOR)}
-              onMouseLeave={(e) => (e.target.style.color = TEXT_COLOR)}
             >
               {item}
             </li>
@@ -52,106 +46,80 @@ const Navbar = () => {
   );
 };
 
-// Hero Section
-const Hero = () => {
-  const scrollToSection = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  return (
-    <section id="home" className="hero">
-      <div className="hero__bg-effect"></div>
-      <div className="hero__content">
-        <h1 className="hero__title">
-          Hi, I'm Marlen —{" "}
-          <span style={{ color: PRIMARY_COLOR }}>Frontend Developer</span>{" "}
-          crafting modern web experiences.
-        </h1>
-        <p className="hero__subtitle">
-          I build fast, elegant, and user-friendly websites using React and
-          JavaScript.
-        </p>
-        <div className="hero__buttons">
-          <button
-            onClick={() => scrollToSection("projects")}
-            className="btn btn--primary"
-            onMouseEnter={(e) => {
-              e.target.style.transform = "translateY(-2px)";
-              e.target.style.boxShadow = `0 0 30px ${PRIMARY_COLOR}80`;
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.transform = "translateY(0)";
-              e.target.style.boxShadow = `0 0 20px ${PRIMARY_COLOR}4D`;
-            }}
-          >
-            View Projects
-          </button>
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="btn btn--secondary"
-            onMouseEnter={(e) => {
-              e.target.style.background = "rgba(0, 198, 255, 0.1)";
-              e.target.style.transform = "translateY(-2px)";
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.background = "transparent";
-              e.target.style.transform = "translateY(0)";
-            }}
-          >
-            Contact Me
-          </button>
-        </div>
+const Hero = () => (
+  <section id="home" className="hero">
+    <div className="hero__bg-effect"></div>
+    <div className="hero__content">
+      <h1 className="hero__title">
+        Hi, I'm Marlen — <span className="highlight">Software Engineer</span>
+      </h1>
+      <p className="hero__subtitle">
+        Building high-performance web applications with a focus on clean
+        architecture and scalable solutions.
+      </p>
+      <div className="hero__buttons">
+        <button
+          onClick={() =>
+            document
+              .getElementById("projects")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+          className="btn btn--primary"
+        >
+          View Projects
+        </button>
+        <button
+          onClick={() =>
+            document
+              .getElementById("contact")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+          className="btn btn--secondary"
+        >
+          Contact Me
+        </button>
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
-// About Section
 const About = () => {
+  const cards = [
+    {
+      title: "Architecture",
+      desc: "Modular and maintainable systems from MVP to scale.",
+    },
+    {
+      title: "Modern Stack",
+      desc: "React 18, TypeScript, and robust state management.",
+    },
+    {
+      title: "Performance",
+      desc: "Optimized rendering and type-safe, testable code.",
+    },
+  ];
+
   return (
-    <section id="about" className="section section--about">
+    <section id="about" className="section about">
       <div className="container">
         <h2 className="section__title">
-          About Me
-          <span className="section__underline"></span>
+          About Me<span className="section__underline"></span>
         </h2>
         <div className="about__content">
           <div className="about__image-container">
             <img src={avatar} alt="Marlen" className="about__avatar" />
           </div>
-          <div>
+          <div className="about__info">
             <p className="about__text">
-              I'm a passionate frontend developer from{" "}
-              <span style={{ color: PRIMARY_COLOR, fontWeight: "600" }}>
-                Messina, Italy
-              </span>
-              . I focus on clean code, scalable interfaces, and smooth user
-              experience.
+              I am a <span className="highlight">Software Engineer</span>{" "}
+              specializing in <strong>React & TypeScript</strong>. I bridge the
+              gap between complex requirements and elegant technical solutions.
             </p>
             <div className="about__cards">
-              {[
-                { title: "Agile", subtitle: "From Idea to Deploy (MVP)" },
-                {
-                  title: "React Mastery",
-                  subtitle: "Complex State & Custom Hooks",
-                },
-                { title: "Scalable", subtitle: "Built for Future Growth" },
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="about__card"
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = "rgba(0, 198, 255, 0.1)";
-                    e.currentTarget.style.transform = "translateY(-5px)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background =
-                      "rgba(0, 198, 255, 0.05)";
-                    e.currentTarget.style.transform = "translateY(0)";
-                  }}
-                >
-                  <h3 className="about__card-title">{item.title}</h3>
-                  <p className="about__card-text">{item.subtitle}</p>
+              {cards.map((card, i) => (
+                <div key={i} className="about__card">
+                  <h3 className="about__card-title">{card.title}</h3>
+                  <p className="about__card-text">{card.desc}</p>
                 </div>
               ))}
             </div>
@@ -165,37 +133,24 @@ const About = () => {
 // Skills Section
 const Skills = () => {
   const skills = [
-    { name: "Accessability", icon: "📱" },
-    { name: "SCSS", icon: "🎨" },
-    { name: "JavaScript", icon: "⚡" },
-    { name: "React", icon: "⚛️" },
-    { name: "Git Flow / GitHub", icon: "🔧" },
-    { name: "Component Design", icon: "🎭" },
+    { name: "TypeScript / JS", icon: "🟦" },
+    { name: "React Ecosystem", icon: "⚛️" },
+    { name: "State Management", icon: "🏗️" },
+    { name: "Modern SCSS", icon: "🎨" },
+    { name: "API Integration", icon: "🔌" },
+    { name: "Git & Workflow", icon: "🛠️" },
   ];
 
   return (
     <section id="skills" className="section section--skills">
       <div className="container">
         <h2 className="section__title">
-          Skills
+          Technical Skills
           <span className="section__underline"></span>
         </h2>
         <div className="skills__grid">
           {skills.map((skill, i) => (
-            <div
-              key={i}
-              className="skills__card"
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = "rgba(0, 198, 255, 0.1)";
-                e.currentTarget.style.transform = "translateY(-10px)";
-                e.currentTarget.style.boxShadow = `0 10px 30px ${PRIMARY_COLOR}4D`;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = "rgba(0, 198, 255, 0.03)";
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = "none";
-              }}
-            >
+            <div key={i} className="skills__card">
               <div className="skills__icon">{skill.icon}</div>
               <h3 className="skills__name">{skill.name}</h3>
             </div>
@@ -210,6 +165,14 @@ const Skills = () => {
 const Projects = () => {
   const projects = [
     {
+      title: "Student Deadline Manager",
+      description: "A deadline manager that is built especially for students",
+      tech: ["React", "SCSS", "TypeScript"],
+      image: studentDeadlineManager,
+      liveDemo: "https://student-deadline-manager.vercel.app",
+      github: "https://github.com/MambaXan/Student-Deadline-Manager",
+    },
+    {
       title: "Admission Chance Calculator",
       description: "React platform for assessing admission chances",
       tech: ["React", "SCSS", "db.json"],
@@ -218,20 +181,20 @@ const Projects = () => {
       github: "https://github.com/yourusername/admission-calculator",
     },
     {
-      title: "Joke App",
-      description: "Intuitive todo app with drag-and-drop functionality",
-      tech: ["React", "SCSS", "LocalStorage"],
-      image: jokeApp,
-      liveDemo: "https://joke-app-azure.vercel.app",
-      github: "https://github.com/MambaXan/Joke-app",
-    },
-    {
       title: "Password Manager",
       description: "A simple and responsive password manager",
       tech: ["React", "localStorage", "CSS"],
       image: passwordManager,
       liveDemo: "https://password-manager-chi-azure.vercel.app",
       github: "https://github.com/MambaXan/password-manager",
+    },
+    {
+      title: "Joke App",
+      description: "Intuitive todo app with drag-and-drop functionality",
+      tech: ["React", "SCSS", "LocalStorage"],
+      image: jokeApp,
+      liveDemo: "https://joke-app-azure.vercel.app",
+      github: "https://github.com/MambaXan/Joke-app",
     },
     {
       title: "ToDo App",
@@ -408,7 +371,10 @@ const Contact = () => {
         <div className="contact__social-links">
           {[
             { name: "GitHub", url: "https://github.com/MambaXan" },
-            { name: "LinkedIn", url: "https://www.linkedin.com/in/marlen-istambaev-944367350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
+            {
+              name: "LinkedIn",
+              url: "https://www.linkedin.com/in/marlen-istambaev-944367350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            },
             { name: "Telegram", url: "https://t.me/+996507324626" },
           ].map((social, i) => (
             <a
