@@ -7,6 +7,7 @@ import passwordManager from "./Images/PasswordManager.png";
 import admissionCalculator from "./Images/admissionCalculator.png";
 import todoApp from "./Images/todoApp.png";
 import studentDeadlineManager from "./Images/studentDeadlineManager.png";
+import rbMainPage from "./Images/rbMainPage.png";
 
 const PRIMARY_COLOR = "#00C6FF";
 const TEXT_COLOR = "#F5F5F5";
@@ -165,9 +166,17 @@ const Skills = () => {
 const Projects = () => {
   const projects = [
     {
+      title: "AI Resume Builder",
+      description: "Simple AI Resume Builder",
+      tech: ["React", "SCSS", "TypeScript", "Python", "FastAPI"],
+      image: rbMainPage,
+      liveDemo: "https://resume-builder-delta-smoky.vercel.app/",
+      github: "https://github.com/MambaXan/AI-Resume-Builder",
+    },
+    {
       title: "Student Deadline Manager",
       description: "A deadline manager that is built especially for students",
-      tech: ["React", "SCSS", "TypeScript"],
+      tech: ["React", "SCSS", "TypeScript", "Python", "FastAPI"],
       image: studentDeadlineManager,
       liveDemo: "https://student-deadline-manager.vercel.app",
       github: "https://github.com/MambaXan/Student-Deadline-Manager",
