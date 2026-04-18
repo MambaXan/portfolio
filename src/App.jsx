@@ -174,6 +174,15 @@ const Projects = () => {
       github: "https://github.com/MambaXan/AI-Resume-Builder",
     },
     {
+      title: "LinkedIn Ghost Searcher",
+      description:
+        "Tool for “invisible” search on LinkedIn without a commercial limit",
+      tech: ["React", "SCSS", "TypeScript", "Python", "FastAPI"],
+      image: rbMainPage,
+      liveDemo: "https://linkedin-ghost-searcher.vercel.app/",
+      github: "https://github.com/MambaXan/linkedin-ghost-searcher",
+    },
+    {
       title: "Student Deadline Manager",
       description: "A deadline manager that is built especially for students",
       tech: ["React", "SCSS", "TypeScript", "Python", "FastAPI"],
