@@ -29,8 +29,16 @@ From writing my first "Hello World" to building complex web applications, my jou
 
 ## 🌟 Featured Work
 
+### AI Resume Builder
+![AI Resume Builder](./src/Images/rbMainPage.png)
+
+### LinkedIn Ghost Searcher
+![LinkedIn Ghost Search](./src/Images/search-page.png)
+
+### Student Deadline Manager
+![Student Deadline Manager](./src/Images/studentDeadlineManager.png)
+
 ### Admission Chance Calculator
-<<<<<<< HEAD
 ![Admission Chance Calculator](./src/Images/admissionCalculator.png)
 
 ### ToDo App
