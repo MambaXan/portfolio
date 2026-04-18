@@ -8,6 +8,8 @@ import admissionCalculator from "./Images/admissionCalculator.png";
 import todoApp from "./Images/todoApp.png";
 import studentDeadlineManager from "./Images/studentDeadlineManager.png";
 import rbMainPage from "./Images/rbMainPage.png";
+import searchPage from "./Images/search-page.png"
+
 
 const PRIMARY_COLOR = "#00C6FF";
 const TEXT_COLOR = "#F5F5F5";
@@ -178,7 +180,7 @@ const Projects = () => {
       description:
         "Tool for “invisible” search on LinkedIn without a commercial limit",
       tech: ["React", "SCSS", "TypeScript", "Python", "FastAPI"],
-      image: rbMainPage,
+      image: searchPage,
       liveDemo: "https://linkedin-ghost-searcher.vercel.app/",
       github: "https://github.com/MambaXan/linkedin-ghost-searcher",
     },
